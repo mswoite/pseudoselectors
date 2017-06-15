@@ -1,0 +1,247 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+	h1, ol, ul { margin:0; padding:0; }
+	img { display:inline-block; max-width:100%; }
+
+	/* Exercise 1 */
+	#example-1 p { font-weight:normal; }
+    #example-1 .example-1{font-weight: bold;}
+	
+	/* Exercise 2 */
+	#family-tree p { font-weight:normal; }
+#family-tree .great-grand-father:first-child p:only-child {font-weight: bold;}
+	
+	/* Exercise 3 */
+    #root div:nth-child(2) p:nth-child(1) {font-weight: bold;}
+
+	/* Exercise 4 */
+	
+.header { background-color:#000; }
+	.header > i { display:none; }
+	
+	.navigation { max-width:1000px; margin:0 auto; position:relative; }
+	.navigation > ul { display:flex; height:40px; list-style:none; margin:0; padding:0; }
+	.navigation > ul > li { flex:1; color:#fff; display:flex; justify-content:center; align-items:center; }
+	.navigation > ul > li + li { border-left:1px solid #fff; }
+	.navigation > ul > li > div { position:absolute; left:-9999px; top:100%; background:#ccc; width:100%; display:flex; }
+	.navigation > ul > li > div > ul { flex:1; list-style:none; margin:0; padding:0; }
+	.navigation > ul > li > div > ul > li { padding:10px; border-bottom: 2px solid darkgray; margin: 0px 10px;}
+	.navigation > ul > li:hover > div { left:0; }
+	.navigation > ul > li:hover { background:#ccc; color:#000; }
+
+@media screen and (max-width:599px) {
+		.header { height:40px; position:relative; display:flex; justify-content:flex-end; align-items:center; }
+		.header > i { display:block; color:#fff; margin-right: 10px;}
+		.navigation { position:absolute; left:-99999px; }
+		.navigation.open { right:0; left:auto; top:100%; width:300px; background-color:#ccc; height:calc(100vh - 40px); }
+    .navigation li{display: flex; flex-direction: column; padding: 10px;}    
+    .navigation > ul { display:block;}
+		.navigation > ul > li > div { position:static; display:block; background-color: white; color: black; padding: 0px 5px;}
+	}
+    
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
